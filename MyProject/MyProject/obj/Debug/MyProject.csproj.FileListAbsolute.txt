@@ -1,0 +1,12 @@
+c:\users\mykhailo_shchukovsky\documents\visual studio 2015\Projects\MyProject\MyProject\bin\Debug\MyProject.exe.config
+C:\Users\Mykhailo_Shchukovsky\documents\visual studio 2015\Projects\MyProject\MyProject\bin\Debug\MyProject.exe
+C:\Users\Mykhailo_Shchukovsky\documents\visual studio 2015\Projects\MyProject\MyProject\bin\Debug\MyProject.pdb
+C:\Users\Mykhailo_Shchukovsky\documents\visual studio 2015\Projects\MyProject\MyProject\bin\Debug\nunit.framework.dll
+C:\Users\Mykhailo_Shchukovsky\documents\visual studio 2015\Projects\MyProject\MyProject\bin\Debug\WebDriver.dll
+C:\Users\Mykhailo_Shchukovsky\documents\visual studio 2015\Projects\MyProject\MyProject\bin\Debug\WebDriver.Support.dll
+C:\Users\Mykhailo_Shchukovsky\documents\visual studio 2015\Projects\MyProject\MyProject\bin\Debug\nunit.framework.xml
+C:\Users\Mykhailo_Shchukovsky\documents\visual studio 2015\Projects\MyProject\MyProject\bin\Debug\WebDriver.xml
+C:\Users\Mykhailo_Shchukovsky\documents\visual studio 2015\Projects\MyProject\MyProject\bin\Debug\WebDriver.Support.xml
+C:\Users\Mykhailo_Shchukovsky\documents\visual studio 2015\Projects\MyProject\MyProject\obj\Debug\MyProject.csprojResolveAssemblyReference.cache
+C:\Users\Mykhailo_Shchukovsky\documents\visual studio 2015\Projects\MyProject\MyProject\obj\Debug\MyProject.exe
+C:\Users\Mykhailo_Shchukovsky\documents\visual studio 2015\Projects\MyProject\MyProject\obj\Debug\MyProject.pdb
