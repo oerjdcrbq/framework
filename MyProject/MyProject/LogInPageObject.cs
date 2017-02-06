@@ -33,11 +33,15 @@ namespace MyProject
 		[FindsBy(How = How.CssSelector, Using = "html.color_scheme_blue.csstransforms.csstransforms3d.csstransitions body div.dialog.new div.dialog-window.open div.title a.dialog-close i.icon-remove")]
 		public IWebElement CloseButton { get; set; }
 
+		[FindsBy(How = How.CssSelector,Using = ".wa-error-msg")]
+		public IWebElement Error { get; set; }
+
 
 		public void FillLoginForm(string login, string password)
 		{
 			LoginField.SendKeys(login);
 			PasswordField.SendKeys(password);
+			bool a = SubmitButton.Enabled;
 		}
 
 		public void ClickLoginButton()

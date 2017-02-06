@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MyProject
@@ -17,16 +18,42 @@ namespace MyProject
 		[SetUp]
 		public void Initialization()
 		{
-			BrowserProperies.driver = new ChromeDriver();
-			BrowserProperies.driver.Manage().Window.Maximize();
-			BrowserProperies.driver.FindElement(By.LinkText("Вход в личный кабинет")).Click();
-			page = new LogInPageObject();
+			BrowserProperies.OpenLoginWindow();
+			
+			Thread.Sleep(3000);
 		}
 
 		[Test]
-		public void InvalidData()
+		public void IncorrectEmail()
 		{
-			page.FillLoginForm("123", "123123");
+			LogInPageObject page = new LogInPageObject();
+
+			ExcelUtil.PopulateInCollection(@"D:\u1.xlsx");
+			string UserName = ExcelUtil.ReadData(0, "UserName");
+			string Password = ExcelUtil.ReadData(0, "Password");
+			page.FillLoginForm(UserName, Password);
+			page.ClickLoginButton();
+
+			Thread.Sleep(2000);
+
+			StringAssert.Contains("Неправильный email или пароль", page.Error.Text);
+		}
+
+		[Test]
+		public void EmptyLogin()
+		{
+			LogInPageObject page = new LogInPageObject();
+			
+			page.ClickLoginButton();
+			
+			Thread.Sleep(2000);
+			StringAssert.Contains("Логин обязателен", page.Error.Text);
+		}
+
+		[TearDown]
+		public void Close()
+		{
+			BrowserProperies.driver.Quit();
 		}
 	}
 }
